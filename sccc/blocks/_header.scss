@@ -1,0 +1,47 @@
+.header {
+    min-height: 840px;
+    background: linear-gradient(180deg, #242B33 11.98%, rgba(45, 52, 60, 0.38) 51.04%, #242B33 92.19%), url(./../../img/header/header-bg.jpg);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    padding-top: 30px;
+    padding-bottom: 74px;
+}
+
+
+.header_top-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.header_top-row {
+    align-items: center;
+}
+
+.header_title {
+    position: relative;
+    padding-bottom: 121px;
+
+    text-align: center;
+    font-size: 48px;
+    font-family: $font-accent;
+    color: $accent;
+    font-weight: 700; 
+}
+
+.header_title-icon{
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 0%);
+}
+
+.header-footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+
