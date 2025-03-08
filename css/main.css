@@ -139,6 +139,8 @@ a:hover {
   min-height: 840px;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(11.98%, #242B33), color-stop(51.04%, rgba(45, 52, 60, 0.38)), color-stop(92.19%, #242B33)), url(./../../img/header/header-bg.jpg);
   background: linear-gradient(180deg, #242B33 11.98%, rgba(45, 52, 60, 0.38) 51.04%, #242B33 92.19%), url(./../../img/header/header-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -160,6 +162,15 @@ a:hover {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.header_nav-btn {
+  display: none;
+}
+@media screen and (max-width: 999px) {
+  .header_nav-btn {
+    display: block;
+  }
 }
 
 .header_top-row {
@@ -241,6 +252,12 @@ a:hover {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 30px;
+}
+
+.card_img {
+  border-radius: 5px;
+  height: 500px;
+  width: 500px;
 }
 
 .card {
@@ -436,7 +453,7 @@ a:hover {
   background: #626262;
 }
 
-.feedbacik {
+.feedback {
   padding-bottom: 180px;
 }
 
