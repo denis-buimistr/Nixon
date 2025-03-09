@@ -137,13 +137,11 @@ a:hover {
 
 .header {
   min-height: 840px;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(11.98%, #242B33), color-stop(51.04%, rgba(45, 52, 60, 0.38)), color-stop(92.19%, #242B33)), url(./../../img/header/header-bg.jpg);
-  background: linear-gradient(180deg, #242B33 11.98%, rgba(45, 52, 60, 0.38) 51.04%, #242B33 92.19%), url(./../../img/header/header-bg.jpg);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(11.98%, #242B33), color-stop(51.04%, rgba(45, 52, 60, 0.38)), color-stop(92.19%, #242B33)), url("/img/header/header-bg.jpg");
+  background: linear-gradient(180deg, #242B33 11.98%, rgba(45, 52, 60, 0.38) 51.04%, #242B33 92.19%), url("/img/header/header-bg.jpg");
   background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -151,8 +149,17 @@ a:hover {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   padding-top: 30px;
   padding-bottom: 74px;
+}
+@media screen and (max-width: 999px) {
+  .header {
+    min-height: unset;
+    row-gap: 50px;
+  }
 }
 
 .header_top-row {
@@ -162,6 +169,12 @@ a:hover {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+@media screen and (max-width: 999px) {
+  .header-nav {
+    display: none;
+  }
 }
 
 .header_nav-btn {
@@ -188,6 +201,12 @@ a:hover {
   color: #D4C17F;
   font-weight: 700;
 }
+@media screen and (max-width: 999px) {
+  .header_title {
+    font-size: 32px;
+    padding-bottom: 80px;
+  }
+}
 
 .header_title-icon {
   position: absolute;
@@ -201,6 +220,21 @@ a:hover {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 30px;
+}
+@media screen and (max-width: 999px) {
+  .header-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    row-gap: 30px;
+  }
 }
 
 .nav {
@@ -652,4 +686,26 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.slider {
+  margin: 0 auto;
+  width: 479px;
+  height: 851px;
+  background-color: rgb(182, 203, 222);
+}
+
+.controls {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.slider img {
+  width: 479px;
+  height: 851px;
+}
+
+.hidden {
+  display: none;
 }

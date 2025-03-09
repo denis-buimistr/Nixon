@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NixonHouse</title>
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./libs/youtubeLightbox/youtubeLightbox.css">
+    
 </head>
 <body>
      <header class="header">
@@ -20,7 +22,7 @@
                                     <li><a href="/aboutComplex.html">О комплексе</a></li>
                                     <li><a href="/district.html">Район</a></li>
                                     <li><a href="/catalog.html">Каталог квартир</a></li>
-                                    <li><a href="/mortgage.html">Ипотека</a></li> 
+                                    <li><a href="/gallery.html">Галерея</a></li> 
                                     <li><a href="#footer">Контакты</a></li>
                                 </ul>
                              
@@ -54,7 +56,7 @@
      </header>
 
      <main>
-        <section class="benefits none">
+        <section class="benefits ">
             <div class="container">
                 <div class="benefits_row">
 
@@ -83,7 +85,7 @@
             </div>
         </section>
 
-        <section class="appartaments none">
+        <section class="appartaments ">
             <div class="container">
                 <div class="appartaments_title">
                     <h2 class="title-2">"О NIXON: комфорт, безопасность и стиль"</h2>
@@ -109,7 +111,7 @@
             </div>
         </section>
 
-        <section class="cta none">
+        <section class="cta ">
             <div class="container">
                 <div class="cta_title">
                     <h2 class="title-2">Хотите посмотреть?</h2>
@@ -119,7 +121,7 @@
                     <div class="cta_text"><p>Nixon, современное и инновационное здание, расположенное в Кишиневе, представляет собой привлекательный дом со множеством удобств и преимуществ, предлагая потенциальным арендаторам потрясающий вид на город и окрестности.</p></div>
                         <form action="" class="cta_form form">
                             <input type="text" class="form_input" placeholder="Ваше имя" autocomplete="off">
-                            <input type="text" class="form_input" placeholder="Ваш телефон" autocomplete="off">
+                            <input data-tel-input="text" class="form_input" placeholder="Ваш телефон" autocomplete="off">
 
                             <p class="form_privacy">Мы никому не передаем ваши данные<br> 
                                 И не сохраняем ваш номер в базу.</p>
@@ -131,9 +133,9 @@
 
         </section>
       
-        <section class="video none" id="video" >
+        <section class="video " id="video" >
             <div class="container">
-                <a href="#" class="video_link">
+                <a href="https://www.youtube.com/watch?v=pbs4p4LCyDM" data-youtubeLightbox class="video_link">
                     <img src="./img/video/video.svg" alt="" class="video_icon">
                     <img src="./img/video/Rectangle 2.jpg" alt="" class="video_image">
                 </a>
@@ -141,7 +143,7 @@
             
         </section>
 
-        <section class="section-map none">       
+        <section class="section-map ">       
             <div class="container">
                 <div class="section-map_title">
                     <h2 class="title-2">Район на карте</h2>
@@ -152,7 +154,7 @@
             </div>
         </section>
 
-        <section class="feedback none">
+        <section class="feedback ">
             <div class="container">
                 <div class="feedback_title">
                     <h2 class="title-2">Есть вопросы?</h2>
@@ -162,7 +164,7 @@
                         И не сохраняем ваш номер в базу.</p>
 
                     <input type="text" class="form_input" placeholder="Ваше имя" autocomplete="off">
-                    <input type="text" class="form_input" placeholder="Ваш телефон" autocomplete="off">
+                    <input data-tel-input="text" class="form_input" placeholder="Ваш телефон" autocomplete="off">
 
                         <button type="submit" class="form_button">Посмотреть район</button>
                     </form>
@@ -171,7 +173,7 @@
         </section>
     </main>
 
-    <footer class="footer none">
+    <footer class="footer ">
         <div class="container">
             <div class="footer_grid">
                 <div class="footer_logo">
@@ -185,7 +187,7 @@
                             <li><a href="/aboutComplex.html">О комплексе</a></li>
                             <li><a href="/district.html">Район</a></li>
                             <li><a href="/catalog.html">Каталог квартир</a></li>
-                            <li><a href="/mortgage.html">Ипотека</a></li> 
+                            <li><a href="/gallery.html">Галерея</a></li> 
                             <li><a href="#">Контакты</a></li>
                         </ul>
                      
@@ -221,5 +223,25 @@
           </div>
         </div>
     </footer>
+
+    <!-- Youtube Light Box -->
+    <div id="youtubelightbox" class="youtubelightbox">
+        <div class="youtubelightbox__centeredchild">
+            <div class="youtubelightbox__videowrapper">
+                <div id="youtubelightboxPlayer"></div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=0ff713b3-2d2c-4437-ac6d-8997081687af&lang=ru_RU" type="text/javascript"></script>
+
+
+    <script src="./libs/phoneMask/mask.js"></script>
+    <script src="./libs/phoneMask/mask_list.js"></script>
+    <script src="./libs/youtubeLightbox/youtubeLightbox.js"></script>
+
+    <script src="js/main.js"></script>
 </body>
 </html> 

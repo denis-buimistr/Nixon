@@ -28,6 +28,9 @@
   &--tel::before {
     background-image: url('./../../img/Vector.svg');
     }
-
+    
+    @include mediaTablet {
+        font-size: 14px;
+    }
 }  
 

@@ -1,12 +1,14 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>catalog</title>
+    <title>gallery</title>
     <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
+    
     <header class="header_complex">
         <div class="header-top">
             <div class="container">
@@ -32,59 +34,30 @@
             </div>
         </div>
         </header>
-        
-        <main class="catalog">
-            <div class="container">
-                <h1 class="title-2">Каталог квартир в Nixon Residential Complex</h1>
-                <p class="intro-text">Добро пожаловать в Nixon Residential Complex — современный жилой комплекс, расположенный всего в 5 минутах от центра Кишинева. Мы предлагаем разнообразные планировки квартир, чтобы удовлетворить потребности каждого клиента.</p>
-                
-                <section class="apartment-category">
-                    <h2 class="title-2">Однокомнатные квартиры</h2>
-                    <div class="apartment-grid">
-                        <div class="apartment-item">
-                            <img src="/img/catalog/1Camera(43.98).jpg" alt="1-комнатная 43.98 м²">
-                            <p>Площадь: 43,98 м²</p>
-                        </div>
-                        <div class="apartment-item">
-                            <img src="/img/catalog/1Camera(49.34).jpg" alt="1-комнатная 49.34 м²">
-                            <p>Площадь: 49,34 м²</p>
-                        </div>
-                    </div>
-                </section>
-                
-                <section class="apartment-category">
-                    <h2 class="title-2">Двухкомнатные квартиры</h2>
-                    <div class="apartment-grid">
-                        <div class="apartment-item">
-                            <img src="/img/catalog/2Camera(73.85).jpg" alt="2-комнатная 73.85 м²">
-                            <p>Площадь: 73,85 м²</p>
-                        </div>
-                        <div class="apartment-item">
-                            <img src="/img/catalog/2Camera(81.93).jpg" alt="2-комнатная 81.93 м²">
-                            <p>Площадь: 81,93 м²</p>
-                        </div>
-                    </div>
-                </section>
-                
-                <section class="apartment-category">
-                    <h2 class="title-2">Трехкомнатные квартиры</h2>
-                    <div class="apartment-grid">
-                        <div class="apartment-item">
-                            <img src="/img/catalog/3Camera(124.91).jpg" alt="3-комнатная 124.91 м²">
-                            <p>Площадь: 124,91 м²</p>
-                        </div>
-                        <div class="apartment-item">
-                            <img src="/img/catalog/3Camera(144.20).jpg" alt="3-комнатная 144.20 м²">
-                            <p>Площадь: 144,20 м²</p>
-                        </div>
-                    </div>
-                </section>
+
+        <div class="container">
+            <div class="slider" id="slider">
+                <img src="./img/slider/1.jpg" alt="">
+                <img src="./img/slider/2.jpg" alt="">
+                <img src="./img/slider/3.webp" alt="">
+                <img src="./img/slider/4.jpg" alt="">
+                <img src="./img/slider/5.webp" alt="">
+                <img src="./img/slider/6.png" alt="">
+                <img src="./img/slider/7.png" alt="">
+                <img src="./img/slider/8.png" alt="">
+                <img src="./img/slider/9.png" alt="">
             </div>
-        </main>
+    
+            <div class="controls">
+                <button id="btnPrev">Назад</button>
+                <button id="btnNext">Вперед</button>
+            </div>
 
-        
+        </div>
 
-        <footer class="footer">
+<!-- 478.69 + 851 -->
+
+        <footer class="footer ">
             <div class="container">
                 <div class="footer_grid">
                     <div class="footer_logo">
@@ -98,7 +71,7 @@
                                 <li><a href="/aboutComplex.html">О комплексе</a></li>
                                 <li><a href="/district.html">Район</a></li>
                                 <li><a href="/catalog.html">Каталог квартир</a></li>
-                                <li><a href="/mortgage.html">Ипотека</a></li> 
+                                <li><a href="/gallery.html">Галерея</a></li> 
                                 <li><a href="#">Контакты</a></li>
                             </ul>
                          
@@ -135,6 +108,7 @@
             </div>
         </footer>
 
-        
+        <script src="./js/slider.js"></script>
+
 </body>
 </html>
