@@ -119,15 +119,15 @@
 
                 <div class="cta_wrapper">
                     <div class="cta_text"><p>Nixon, современное и инновационное здание, расположенное в Кишиневе, представляет собой привлекательный дом со множеством удобств и преимуществ, предлагая потенциальным арендаторам потрясающий вид на город и окрестности.</p></div>
-                        <form action="" class="cta_form form">
-                            <input type="text" class="form_input" placeholder="Ваше имя" autocomplete="off">
-                            <input data-tel-input="text" class="form_input" placeholder="Ваш телефон" autocomplete="off">
-
-                            <p class="form_privacy">Мы никому не передаем ваши данные<br> 
-                                И не сохраняем ваш номер в базу.</p>
-
-                                <button type="submit" class="form_button">Посмотреть район</button>
-                        </form>
+                    <form action="./PHP/index.php" method="post" class="cta_form form">
+                        <input type="text" class="form_input" name="name" placeholder="Ваше имя" autocomplete="off" required>
+                        <input data-tel-input="text" class="form_input" name="phone" placeholder="Ваш телефон" autocomplete="off" required>
+                    
+                        <p class="form_privacy">Мы никому не передаем ваши данные<br> И не сохраняем ваш номер в базу.</p>
+                    
+                        <button type="submit" class="form_button">Посмотреть район</button>
+                    </form>
+                    
                 </div>
             </div>
 
@@ -159,12 +159,12 @@
                 <div class="feedback_title">
                     <h2 class="title-2">Есть вопросы?</h2>
                 </div>
-                <form class="feedback_form form">
+                <form  action="./PHP/index.php" method="post" class="feedback_form form">
                     <p class="form_privacy">Мы никому не передаем ваши данные<br> 
                         И не сохраняем ваш номер в базу.</p>
 
-                    <input type="text" class="form_input" placeholder="Ваше имя" autocomplete="off">
-                    <input data-tel-input="text" class="form_input" placeholder="Ваш телефон" autocomplete="off">
+                    <input type="text" name="name_1" class="form_input" placeholder="Ваше имя" autocomplete="off">
+                    <input data-tel-input="text" name="phone_1" class="form_input" placeholder="Ваш телефон" autocomplete="off">
 
                         <button type="submit" class="form_button">Посмотреть район</button>
                     </form>
