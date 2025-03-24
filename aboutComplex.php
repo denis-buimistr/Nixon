@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -12,15 +11,15 @@
         <div class="header-top">
             <div class="container">
                 <div class="header_top-row">
-                    <a href="index.html">
+                    <a href="index.php">
                         <img src="./img/first-screen__logo.svg" alt="NixonHouse">
                     </a>
                     <nav class="nav">
                         <ul class="nav_list">
-                            <li><a href="#">О комплексе</a></li>
-                            <li><a href="/district.html">Район</a></li>
-                            <li><a href="/catalog.html">Каталог квартир</a></li>
-                            <li><a href="/mortgage.html">Ипотека</a></li> 
+                            <li><a href="../PHP/aboutComplex.php">О комплексе</a></li>
+                            <li><a href="/district.php">Район</a></li>
+                            <li><a href="/catalog.php">Каталог квартир</a></li>
+                            <li><a href="/mortgage.php">Ипотека</a></li> 
                             <li><a href="#">Контакты</a></li>
                         </ul>
                     </nav>
@@ -75,10 +74,10 @@
                 <div class="footer_nav">
                     <nav>
                         <ul class="footer_nav-list">
-                            <li><a href="/aboutComplex.html">О комплексе</a></li>
-                            <li><a href="/district.html">Район</a></li>
-                            <li><a href="/catalog.html">Каталог квартир</a></li>
-                            <li><a href="/mortgage.html">Ипотека</a></li> 
+                            <li><a href="/aboutComplex.php">О комплексе</a></li>
+                            <li><a href="/district.php">Район</a></li>
+                            <li><a href="/catalog.php">Каталог квартир</a></li>
+                            <li><a href="/mortgage.php">Ипотека</a></li> 
                             <li><a href="#">Контакты</a></li>
                         </ul>
                      

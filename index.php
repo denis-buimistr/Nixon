@@ -1,11 +1,12 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NixonHouse</title>
-    <link rel="stylesheet" href="./css/main.css">
-    <link rel="stylesheet" href="./libs/youtubeLightbox/youtubeLightbox.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="../libs/youtubeLightbox/youtubeLightbox.css">
     
 </head>
 <body>
@@ -19,10 +20,10 @@
                         <div class="header-nav">
                             <nav class="nav">
                                 <ul class="nav_list">
-                                    <li><a href="/aboutComplex.html">О комплексе</a></li>
-                                    <li><a href="/district.html">Район</a></li>
-                                    <li><a href="/catalog.html">Каталог квартир</a></li>
-                                    <li><a href="/gallery.html">Галерея</a></li> 
+                                    <li><a href="aboutComplex.php">О комплексе</a></li>
+                                    <li><a href="/district.php">Район</a></li>
+                                    <li><a href="/catalog.php">Каталог квартир</a></li>
+                                    <li><a href="/gallery.php">Галерея</a></li> 
                                     <li><a href="#footer">Контакты</a></li>
                                 </ul>
                              
@@ -119,7 +120,7 @@
 
                 <div class="cta_wrapper">
                     <div class="cta_text"><p>Nixon, современное и инновационное здание, расположенное в Кишиневе, представляет собой привлекательный дом со множеством удобств и преимуществ, предлагая потенциальным арендаторам потрясающий вид на город и окрестности.</p></div>
-                    <form action="./PHP/index.php" method="post" class="cta_form form">
+                    <form action="form.php" method="post" class="cta_form form">
                         <input type="text" class="form_input" name="name" placeholder="Ваше имя" autocomplete="off" required>
                         <input data-tel-input="text" class="form_input" name="phone" placeholder="Ваш телефон" autocomplete="off" required>
                     
@@ -159,7 +160,7 @@
                 <div class="feedback_title">
                     <h2 class="title-2">Есть вопросы?</h2>
                 </div>
-                <form  action="./PHP/index.php" method="post" class="feedback_form form">
+                <form  action="form_1.php" method="post" class="feedback_form form">
                     <p class="form_privacy">Мы никому не передаем ваши данные<br> 
                         И не сохраняем ваш номер в базу.</p>
 
@@ -184,10 +185,10 @@
                 <div class="footer_nav">
                     <nav>
                         <ul class="footer_nav-list">
-                            <li><a href="/aboutComplex.html">О комплексе</a></li>
-                            <li><a href="/district.html">Район</a></li>
-                            <li><a href="/catalog.html">Каталог квартир</a></li>
-                            <li><a href="/gallery.html">Галерея</a></li> 
+                            <li><a href="/aboutComplex.php">О комплексе</a></li>
+                            <li><a href="/district.php">Район</a></li>
+                            <li><a href="/catalog.php">Каталог квартир</a></li>
+                            <li><a href="/gallery.php">Галерея</a></li> 
                             <li><a href="#">Контакты</a></li>
                         </ul>
                      
